@@ -1,0 +1,98 @@
+{
+	"info": {
+		"_postman_id": "cbc3d418-e345-4e13-b3e6-d41925900dfe",
+		"name": "XBrainRequest",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "requests",
+			"description": "",
+			"item": [
+				{
+					"name": "Requests",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://127.0.0.1:8443/api/pedidos/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8443",
+							"path": [
+								"api",
+								"pedidos",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Request",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n\t\"clientCode\": 2,\n\t\"deliveryAdress\": \"Av. Paraná, 217\",\n\t\"value\": 20.0,\n\t\"products\": [\n\t    {\n\t        \"code\": 20\n\t    }\n\t]\n}"
+						},
+						"url": {
+							"raw": "http://127.0.0.1:8443/api/pedidos/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8443",
+							"path": [
+								"api",
+								"pedidos",
+								""
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deliveries",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://127.0.0.1:8443/api/entregas/",
+							"protocol": "http",
+							"host": [
+								"127",
+								"0",
+								"0",
+								"1"
+							],
+							"port": "8443",
+							"path": [
+								"api",
+								"entregas",
+								""
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
